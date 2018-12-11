@@ -1,5 +1,9 @@
 import { Meteor } from 'meteor/meteor';
+import { Mongo } from 'meteor/mongo';
+
+import valueList from '../imports/database/value';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+
+    (valueList.find().count());
 });

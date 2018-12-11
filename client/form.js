@@ -9,5 +9,6 @@ Template.form.events({
         valueList.insert({
             name : valueGit
         })
+        event.target.value.value = "";
     }
 })
